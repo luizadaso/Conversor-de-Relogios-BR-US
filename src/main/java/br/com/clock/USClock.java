@@ -8,19 +8,29 @@ public class USClock extends Clock {
         return periodIndicator;
     }
 
+    public void setPM(){
+        this.periodIndicator = "PM";
+    }
 
+    public void setAM(){
+        this.periodIndicator = "AM";
+    }
 
     public void setHour(int hour) {
-        this.periodIndicator = "AM";
+        if (hour < 0 || hour > 23) {
+            throw new IllegalArgumentException("Hora inválida");
+        }
 
-        if ((hour >= 12) && (hour <= 23)) {
-            this.periodIndicator = "PM";
-            this.hour = hour - 12;
-        } else if (hour >= 24) {
-            this.hour = 0;
-            
+        if (hour >= 12) {
+            setPM();
+            this.hour = hour % 12;
         } else {
+            setAM();
             this.hour = hour;
+        }
+
+        if (this.hour == 0) {
+            this.hour = 12;
         }
     }
 
