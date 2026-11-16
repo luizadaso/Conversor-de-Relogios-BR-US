@@ -11,6 +11,10 @@ public class Clock {
     }
 
     public void setHour(int hour) {
+        if (hour >= 24){
+            this.hour = 24;
+            return;
+        }
         this.hour = hour;
     }
 
@@ -19,6 +23,10 @@ public class Clock {
     }
 
     public void setMinute(int minute) {
+        if (minute >= 60){
+            this.minute = 60;
+            return;
+        }
         this.minute = minute;
     }
 
@@ -27,6 +35,10 @@ public class Clock {
     }
 
     public void setSecond(int second) {
+        if (second >= 60) {
+            this.second = 60;
+            return;
+        }
         this.second = second;
     }
 }
