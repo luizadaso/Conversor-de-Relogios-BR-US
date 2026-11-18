@@ -10,8 +10,7 @@ public non-sealed class BRClock extends Clock{
 
         switch (clock){
             case USClock usClock ->
-                this.hour = (usClock.getPeriodIndicator().equals("PM")) ?
-                            usClock.getHour() + 12 : usClock.getHour();
+                this.hour = (usClock.getPeriodIndicator().equals("PM")) ? usClock.getHour() + 12 : usClock.getHour();
 
             case BRClock brClock -> this.hour = brClock.getHour();
 
