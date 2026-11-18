@@ -18,7 +18,7 @@ public non-sealed class USClock extends Clock {
 
     public void setHour(int hour) {
         if (hour < 0 || hour > 23) {
-            throw new IllegalArgumentException("Hora inválida");
+            System.out.println("Hora inválida");
         }
 
         if (hour >= 12) {
@@ -54,5 +54,10 @@ public non-sealed class USClock extends Clock {
         }
 
         return this;
+    }
+
+    @Override
+    public String getTime() {
+        return super.getTime() + " " + this.periodIndicator;
     }
 }
