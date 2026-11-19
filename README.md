@@ -91,21 +91,6 @@ java Main
 
 ---
 
-## Estrutura do*Projeto
-
-```text
-src/
-└── br/
-    ── com/
-        └── clock/
-            ├── Clock.java
-            ├── BRClock.java
-            ├── USClock.java
-            └── Main.java
-```
-
----
-
 ## Uso de Classes Sealeds
 
 O projeto utiliza o recurso de **Sealed Classes**, introduzido nas versões recentes do Java.
@@ -131,7 +116,7 @@ Dessa forma, apenas as classes `BRClock` e `USClock` podem estender da classe ba
 
 ---
 
-## 📄 Licença
+## Licença
 
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](https://github.com/luizadaso/Relogios-do-Mundo/blob/main/LICENSE) para mais detalhes.
 
