@@ -1,4 +1,4 @@
-# 🕒 Clock Converter
+# 🕒 Conversor de Relógios BR-US
 
 Sistema desenvolvido em **Java 21 puro** para manipulação e conversão de horários entre os formatos de exibição utilizados no **Brasil (24 horas)** e nos **Estados Unidos (12 horas com AM/PM)**.
 
